@@ -18,6 +18,7 @@ app.directive('datebox', function ($location, $timeout, $rootScope, Cities)
             $scope.getAge = function (dateString)
             {
                 var today = new Date();
+ var today = new Date();
                 var arr = dateString.split('/')
                 var birthDate = new Date(arr[2], arr[1], arr[0]);
                 var age = today.getFullYear() - birthDate.getFullYear();
